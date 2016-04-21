@@ -1,0 +1,9 @@
+[caps]
+deviceName = "CEDUBASSAM5TNJZP"
+platformName = "Android"
+appActivity = ".activity.StartActivity"
+appPackage = "com.booking"
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false

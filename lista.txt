@@ -1,0 +1,1343 @@
+DUMP OF SERVICE package:
+  Activity Resolver Table:
+    Full MIME Types:
+        application/vnd.com.booking.nfc.booking.beam:
+          2b3bfc9d com.booking/.postbooking.bookingsList.ui.BookingsListActivity filter 1671cd26
+            Action: "android.nfc.action.NDEF_DISCOVERED"
+            Category: "android.intent.category.DEFAULT"
+            Type: "application/vnd.com.booking.nfc.booking.beam"
+
+    Base MIME Types:
+        application:
+          2b3bfc9d com.booking/.postbooking.bookingsList.ui.BookingsListActivity filter 1671cd26
+            Action: "android.nfc.action.NDEF_DISCOVERED"
+            Category: "android.intent.category.DEFAULT"
+            Type: "application/vnd.com.booking.nfc.booking.beam"
+
+    Schemes:
+        bookstrikead:
+          2df09512 com.booking/.activity.StartActivity filter 3179c68
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "bookstrikead"
+            Authority: "strikead": -1
+        http:
+          2df09512 com.booking/.activity.StartActivity filter 1883d38b
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "http"
+            Authority: ".booking.com": -1 WILD
+            Path: "PatternMatcher{PREFIX: /android}"
+          3ac724e3 com.booking/.activity.AppLinkActivity filter 3b01bbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "http"
+            Authority: "www.booking.com": -1
+            Path: "PatternMatcher{PREFIX: /app_link/hotel/}"
+          1e9a0ee0 com.booking/.activity.EmkAppLinkActivity filter 222f9080
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "http"
+            Authority: ".booking.com": -1 WILD
+            Path: "PatternMatcher{PREFIX: /app_link/city/}"
+            Path: "PatternMatcher{PREFIX: /app_link/index.}"
+            Path: "PatternMatcher{PREFIX: /app_link/searchresults.}"
+        booking_com_privacy_policy:
+          1960c599 com.booking/.activity.PrivacyActivity filter c5a1d67
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "booking_com_privacy_policy"
+        booking:
+          37bef05e com.booking/.activity.DeeplinkingActivity filter 23257881
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "booking"
+        https:
+          3ac724e3 com.booking/.activity.AppLinkActivity filter 2b9d95b2
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "https"
+            Authority: ".booking.com": -1 WILD
+            Path: "PatternMatcher{PREFIX: /app_link/mybooking}"
+            Path: "PatternMatcher{PREFIX: /app_link/myreservations}"
+          3ac724e3 com.booking/.activity.AppLinkActivity filter f612903
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "https"
+            Authority: ".booking.com": -1 WILD
+            Path: "PatternMatcher{PREFIX: /mybooking}"
+        booking_com_terms_and_conditions:
+          303d2c3f com.booking/.activity.TermsActivity filter 1bfe1714
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Scheme: "booking_com_terms_and_conditions"
+
+    Non-Data Actions:
+        com.lge.quickcover:
+          2541390c com.booking/.activity.QuickCoverActivity filter f47b6b9
+            Action: "com.lge.quickcover"
+            Action: "android.intent.action.MAIN"
+        android.intent.action.MAIN:
+          2df09512 com.booking/.activity.StartActivity filter 51db55a
+            Action: "android.intent.action.MAIN"
+            Category: "android.intent.category.LAUNCHER"
+          2541390c com.booking/.activity.QuickCoverActivity filter f47b6b9
+            Action: "com.lge.quickcover"
+            Action: "android.intent.action.MAIN"
+
+    MIME Typed Actions:
+        android.nfc.action.NDEF_DISCOVERED:
+          2b3bfc9d com.booking/.postbooking.bookingsList.ui.BookingsListActivity filter 1671cd26
+            Action: "android.nfc.action.NDEF_DISCOVERED"
+            Category: "android.intent.category.DEFAULT"
+            Type: "application/vnd.com.booking.nfc.booking.beam"
+
+  Receiver Resolver Table:
+    Non-Data Actions:
+        com.booking.actions.SHOW_LOCATION_FROM_PERSISTENT_NOTIFICATION:
+          276f2255 com.booking/.service.NotificationActionBroadcastReceiver filter 6e5b47c
+            Action: "com.booking.actions.SHOW_LOCATION_FROM_PERSISTENT_NOTIFICATION"
+        com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+          985b46a com.booking/com.google.android.gms.analytics.AnalyticsReceiver filter 17f6454d
+            Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+        com.booking.actions.SHOW_PERSISTENT_NOTIFICATION:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.android.vending.INSTALL_REFERRER:
+          294ed9f8 com.booking/.manager.AffiliateManager filter 23872802
+            Action: "com.android.vending.INSTALL_REFERRER"
+        com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.google.android.c2dm.intent.RECEIVE:
+          2acc8ed1 com.booking/.manager.PushNotificationManager filter 248d513
+            Action: "com.google.android.c2dm.intent.RECEIVE"
+            Category: "com.booking"
+        android.intent.action.BOOT_COMPLETED:
+          1342ad36 com.booking/.BootReceiver filter 761af6f
+            Action: "android.intent.action.BOOT_COMPLETED"
+        com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        com.booking.WIDGET_UPDATE:
+          31ee6437 com.booking/.widget.DealWidgetProvider filter feee949
+            Action: "android.appwidget.action.APPWIDGET_UPDATE"
+            Action: "com.booking.WIDGET_UPDATE"
+        com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+        android.appwidget.action.APPWIDGET_UPDATE:
+          31ee6437 com.booking/.widget.DealWidgetProvider filter feee949
+            Action: "android.appwidget.action.APPWIDGET_UPDATE"
+            Action: "com.booking.WIDGET_UPDATE"
+        com.google.android.c2dm.intent.REGISTRATION:
+          2acc8ed1 com.booking/.manager.PushNotificationManager filter 9a0b350
+            Action: "com.google.android.c2dm.intent.REGISTRATION"
+            Category: "com.booking"
+        android.intent.action.MY_PACKAGE_REPLACED:
+          1e939da4 com.booking/.dcl.DCLBroadcastReceiver filter b3d105
+            Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION:
+          3ee24d5b com.booking/.service.alarm.AlarmPendingTaskBroadcastReceiver filter b43c24e
+            Action: "com.booking.actions.SHOW_PERSISTENT_NOTIFICATION"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_ALARM"
+            Action: "com.booking.actions.CHECK_IN_REVIEW_GEOFENCE_FALLBACK_ALARM"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_PRECHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.SHOW_CITY_GUIDES_POSTCHECKIN_NOTIFICATION"
+            Action: "com.booking.actions.PHOTO_UPLOAD_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.ROOM_REVIEW_SEQUENCE_NOTIFICATION_ALARM"
+            Action: "com.booking.actions.BOOKING_PROCESS_ABANDONMENT_ALARM"
+            Action: "com.booking.actions.CITY_GUIDE_FEEDBACK_NOTIFICATION"
+
+  Service Resolver Table:
+    Non-Data Actions:
+        android.content.SyncAdapter:
+          fba470d com.booking/.dcl.syncadapter.DCLSyncService filter 1ac42877
+            Action: "android.content.SyncAdapter"
+        android.accounts.AccountAuthenticator:
+          350466c2 com.booking/.dcl.syncadapter.DCLAccountService filter 2ce3ace4
+            Action: "android.accounts.AccountAuthenticator"
+
+  Permissions:
+    Permission [com.booking.permission.RECEIVER] (263b0cd3):
+      sourcePackage=com.booking
+      uid=10159 gids=[] type=0 prot=signature
+      packageSetting=PackageSetting{33ef010 com.booking/10159}
+      perm=Permission{b514709 com.booking.permission.RECEIVER}
+    Permission [com.booking.permission.C2D_MESSAGE] (f362d0e):
+      sourcePackage=com.booking
+      uid=10159 gids=[] type=0 prot=signature
+      packageSetting=PackageSetting{33ef010 com.booking/10159}
+      perm=Permission{229fa32f com.booking.permission.C2D_MESSAGE}
+
+  Registered ContentProviders:
+    com.booking/.dcl.syncadapter.DCLContentProvider:
+      Provider{70afd3c com.booking/.dcl.syncadapter.DCLContentProvider}
+    com.booking/.cityguide.data.SavedPlacesProvider:
+      Provider{313e4ac5 com.booking/.cityguide.data.SavedPlacesProvider}
+    com.booking/.db.PostBookingProvider:
+      Provider{bac0c1a com.booking/.db.PostBookingProvider}
+    com.booking/.common.logging.LoggingProvider:
+      Provider{1a0d434b com.booking/.common.logging.LoggingProvider}
+    com.booking/.messagecenter.p2g.MessageCenterContentProvider:
+      Provider{3928b128 com.booking/.messagecenter.p2g.MessageCenterContentProvider}
+    com.booking/.persistence.contentProvider.BookingContentProvider:
+      Provider{293dce41 com.booking/.persistence.contentProvider.BookingContentProvider}
+    com.booking/.persistence.contentProvider.HotelTransportContentProvider:
+      Provider{2b6ecfe6 com.booking/.persistence.contentProvider.HotelTransportContentProvider}
+
+  ContentProvider Authorities:
+    [com.booking.booking.provider]:
+      Provider{293dce41 com.booking/.persistence.contentProvider.BookingContentProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.dcl]:
+      Provider{70afd3c com.booking/.dcl.syncadapter.DCLContentProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.data]:
+      Provider{bac0c1a com.booking/.db.PostBookingProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.message.center.provider]:
+      Provider{3928b128 com.booking/.messagecenter.p2g.MessageCenterContentProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.hotel.transport.provider]:
+      Provider{2b6ecfe6 com.booking/.persistence.contentProvider.HotelTransportContentProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.common.logging.provider]:
+      Provider{1a0d434b com.booking/.common.logging.LoggingProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+    [com.booking.provider.SavedPlaces]:
+      Provider{313e4ac5 com.booking/.cityguide.data.SavedPlacesProvider}
+        applicationInfo=ApplicationInfo{336ac927 com.booking}
+
+  Key Set Manager:
+    [com.booking]
+        Signing KeySets: 548
+
+  Packages:
+    Package [com.booking] (33ef010):
+      userId=10159 gids=[3003, 1028, 1015]
+      pkg=Package{28ebb7d4 com.booking}
+      codePath=/data/app/com.booking-1
+      resourcePath=/data/app/com.booking-1
+      legacyNativeLibraryDir=/data/app/com.booking-1/lib
+      primaryCpuAbi=arm64-v8a
+      secondaryCpuAbi=null
+      versionCode=1794 targetSdk=23
+      versionName=9.9.4
+      applicationInfo=ApplicationInfo{336ac927 com.booking}
+      flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+      pkgFlagsEx=[ ]
+      dataDir=/data/data/com.booking
+      supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+      usesOptionalLibraries:
+        com.google.android.maps
+      usesLibraryFiles:
+        /system/framework/com.google.android.maps.jar
+      timeStamp=2016-04-15 16:01:55
+      firstInstallTime=2016-04-15 16:01:57
+      lastUpdateTime=2016-04-15 16:01:57
+      installerPackageName=com.android.vending
+      signatures=PackageSignatures{580d7d [25480472]}
+      permissionsFixed=true haveGids=true installStatus=1
+      pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+      User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+      grantedPermissions:
+        android.permission.NFC
+        com.android.alarm.permission.SET_ALARM
+        android.permission.INTERNET
+        com.booking.permission.C2D_MESSAGE
+        android.permission.READ_SYNC_SETTINGS
+        android.permission.WRITE_EXTERNAL_STORAGE
+        com.booking.permission.RECEIVER
+        android.permission.ACCESS_FINE_LOCATION
+        android.permission.GET_ACCOUNTS
+        android.permission.CAMERA
+        com.google.android.providers.gsf.permission.READ_GSERVICES
+        android.permission.RECEIVE_BOOT_COMPLETED
+        android.permission.READ_EXTERNAL_STORAGE
+        android.permission.WRITE_SYNC_SETTINGS
+        android.permission.AUTHENTICATE_ACCOUNTS
+        com.google.android.c2dm.permission.RECEIVE
+        android.permission.ACCESS_NETWORK_STATE
+        android.permission.USE_CREDENTIALS
+
+DUMP OF SERVICE activity:
+  ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+    (nothing)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+    Registered Receivers:
+    * ReceiverList{28d55f8c 17958 com.booking/10159/u0 remote:2b87dcbf}
+      app=17958:com.booking/u0a159 pid=17958 uid=10159 user=0
+      Filter #0: BroadcastFilter{183e86d5}
+        Action: "android.intent.action.ACTION_POWER_CONNECTED"
+    * ReceiverList{1f6785db 17958 com.booking/10159/u0 remote:3d727eea}
+      app=17958:com.booking/u0a159 pid=17958 uid=10159 user=0
+      Filter #0: BroadcastFilter{c3ee878}
+        Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+    * ReceiverList{3d719fb6 17958 com.booking/10159/u0 remote:266dbb51}
+      app=17958:com.booking/u0a159 pid=17958 uid=10159 user=0
+      Filter #0: BroadcastFilter{4cea4b7}
+        Action: "android.net.conn.CONNECTIVITY_CHANGE"
+
+    Receiver Resolver Table:
+      Non-Data Actions:
+          android.intent.action.ACTION_POWER_DISCONNECTED:
+            BroadcastFilter{c3ee878 u0 ReceiverList{1f6785db 17958 com.booking/10159/u0 remote:3d727eea}}
+          android.net.conn.CONNECTIVITY_CHANGE:
+            BroadcastFilter{4cea4b7 u0 ReceiverList{3d719fb6 17958 com.booking/10159/u0 remote:266dbb51}}
+          android.intent.action.ACTION_POWER_CONNECTED:
+            BroadcastFilter{183e86d5 u0 ReceiverList{28d55f8c 17958 com.booking/10159/u0 remote:2b87dcbf}}
+
+    mBroadcastsScheduled [foreground]=false
+    mBroadcastsScheduled [background]=false
+    mHandler:
+      Handler (com.android.server.am.ActivityManagerService$MainHandler) {11dd0479} @ 12244167
+        Looper (ActivityManager, tid 22) {210df5be}
+          Message 0: { when=+13m53s889ms what=27 target=com.android.server.am.ActivityManagerService$MainHandler }
+          Message 1: { when=+16m14s280ms callback=com.android.server.AppOpsService$1 target=com.android.server.am.ActivityManagerService$MainHandler callback=com.android.server.AppOpsService$1@22c5b61f }
+          (Total messages: 2, idling=true, quitting=false)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+    Published user 0 content providers (by class):
+    * ContentProviderRecord{33021b2f u0 com.booking/.cityguide.data.SavedPlacesProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@1188153c
+      authority=com.booking.provider.SavedPlaces
+    * ContentProviderRecord{15d182c5 u0 com.booking/.db.PostBookingProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@96ae41a
+      authority=com.booking.data
+    * ContentProviderRecord{1a1f3b4b u0 com.booking/.common.logging.LoggingProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@a5f4928
+      authority=com.booking.common.logging.provider
+    * ContentProviderRecord{2fcc8641 u0 com.booking/.messagecenter.p2g.MessageCenterContentProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@24327e6
+      authority=com.booking.message.center.provider
+    * ContentProviderRecord{2ea44127 u0 com.booking/.persistence.contentProvider.BookingContentProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@32f3cfd4
+      authority=com.booking.booking.provider
+    * ContentProviderRecord{d1a457d u0 com.booking/.persistence.contentProvider.HotelTransportContentProvider}
+      package=com.booking process=com.booking
+      proc=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      uid=10159 provider=android.content.ContentProviderProxy@1109dc72
+      authority=com.booking.hotel.transport.provider
+
+    User 0 authority to provider mappings:
+    com.booking.data: 15d182c5/com.booking/.db.PostBookingProvider
+    com.booking.message.center.provider: 2fcc8641/com.booking/.messagecenter.p2g.MessageCenterContentProvider
+    com.booking.booking.provider: 2ea44127/com.booking/.persistence.contentProvider.BookingContentProvider
+    com.booking.hotel.transport.provider: d1a457d/com.booking/.persistence.contentProvider.HotelTransportContentProvider
+    com.booking.common.logging.provider: 1a1f3b4b/com.booking/.common.logging.LoggingProvider
+    com.booking.provider.SavedPlaces: 33021b2f/com.booking/.cityguide.data.SavedPlacesProvider
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER SERVICES (dumpsys activity services)
+    User 0 active services:
+    * ServiceRecord{1d35c3bc u0 com.booking/.service.LoggingService}
+      intent={cmp=com.booking/.service.LoggingService}
+      packageName=com.booking
+      processName=com.booking
+      baseDir=/data/app/com.booking-1/base.apk
+      dataDir=/data/data/com.booking
+      app=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      createTime=-52s174ms startingBgTimeout=--
+      lastActivity=-40s253ms restartTime=-52s173ms createdFromFg=true
+      startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=3
+
+    Connection bindings to services:
+    * ConnectionRecord{3ba0769a u0 CR ACT com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@30efcf45}
+      binding=AppBindRecord{3489c8c3 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:com.booking}
+      conn=android.os.BinderProxy@30efcf45 flags=0x81
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+    (nothing)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+  Display #0 (activities from top to bottom):
+    Stack #1:
+      Task id #312
+      * TaskRecord{23a81540 #312 A=com.booking U=0 sz=1}
+        userId=0 effectiveUid=u0a159 mCallingUid=u0a159 mCallingPackage=com.booking
+        affinity=com.booking
+        intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.booking/.activity.StartActivity}
+        realActivity=com.booking/.activity.StartActivity
+        autoRemoveRecents=false isPersistable=true numFullscreen=1 taskType=0 mTaskToReturnTo=1
+        rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false
+        Activities=[ActivityRecord{279f8787 u0 com.booking/.activity.SearchActivity t312}]
+        askedCompatMode=false inRecents=true isAvailable=true
+        lastThumbnail=null lastThumbnailFile=/data/system/recent_images/312_task_thumbnail.png
+        hasBeenVisible=true firstActiveTime=1461101701089 lastActiveTime=1461101701089 (inactive for 50s)
+        * Hist #0: ActivityRecord{279f8787 u0 com.booking/.activity.SearchActivity t312}
+            packageName=com.booking processName=com.booking
+            launchedFromUid=10159 launchedFromPackage=com.booking userId=0
+            app=ProcessRecord{1eb61424 17958:com.booking/u0a159}
+            Intent { cmp=com.booking/.activity.SearchActivity }
+            frontOfTask=true task=TaskRecord{23a81540 #312 A=com.booking U=0 sz=1}
+            taskAffinity=com.booking
+            realActivity=com.booking/.activity.SearchActivity
+            baseDir=/data/app/com.booking-1/base.apk
+            dataDir=/data/data/com.booking
+            stateNotNeeded=false componentSpecified=true mActivityType=0
+            compat={480dpi} labelRes=0x7f0802ed icon=0x7f020373 theme=0x7f0b01df
+            config={0.86 736mcc1mnc es_US ldltr sw360dp w360dp h620dp 480dpi nrml long port uimode=12 finger -keyb/v/h -nav/h s.7 themeChanged=0 themeChangedFlags=0}
+            taskDescription: iconFilename=null label="null" color=ff003580
+            launchFailed=false launchCount=0 lastLaunchTime=-51s483ms
+            haveState=true icicle=Bundle[mParcelledData.dataSize=7748]
+            state=STOPPED stopped=true delayedResume=false finishing=false
+            keysPaused=false inHistory=true visible=false sleeping=false idle=true
+            fullscreen=true noDisplay=false immersive=false launchMode=0
+            frozenBeforeDestroy=false forceNewConfig=false
+            mActivityType=APPLICATION_ACTIVITY_TYPE
+            waitingVisible=false nowVisible=false lastVisibleTime=-50s715ms
+
+      Running activities (most recent first):
+        TaskRecord{23a81540 #312 A=com.booking U=0 sz=1}
+          Run #0: ActivityRecord{279f8787 u0 com.booking/.activity.SearchActivity t312}
+
+      mLastPausedActivity: ActivityRecord{279f8787 u0 com.booking/.activity.SearchActivity t312}
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+    All known processes:
+    *APP* UID 10159 ProcessRecord{1eb61424 17958:com.booking/u0a159}
+      user #0 uid=10159
+      class=com.booking.BookingApplication
+      dir=/data/app/com.booking-1/base.apk publicDir=/data/app/com.booking-1/base.apk data=/data/data/com.booking
+      packageList={com.booking}
+      compat={480dpi}
+      thread=android.app.ApplicationThreadProxy@148abc79
+      pid=17958 starting=false
+      lastActivityTime=-51s483ms lastPssTime=-30s501ms nextPssTime=+19m29s433ms
+      adjSeq=32271 lruSeq=0 lastPss=57280 lastCachedPss=0
+      cached=false empty=true
+      oom: max=16 curRaw=7 setRaw=7 cur=7 set=7
+      curSchedGroup=0 setSchedGroup=0 systemNoUi=false trimMemoryLevel=0
+      curProcState=7 repProcState=7 pssProcState=7 setProcState=7 lastStateTime=-50s655ms
+      hasShownUi=true pendingUiClean=false hasAboveClient=false treatLikeActivity=false
+      hasStartedServices=true
+      lastWakeTime=0 timeUsed=0
+      lastCpuTime=0 timeUsed=0
+      lastRequestedGc=-52s644ms lastLowMemory=-52s644ms reportLowMemory=false
+      Activities:
+        - ActivityRecord{279f8787 u0 com.booking/.activity.SearchActivity t312}
+      Services:
+        - ServiceRecord{1d35c3bc u0 com.booking/.service.LoggingService}
+      Connections:
+        - ConnectionRecord{3ba0769a u0 CR ACT com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@30efcf45}
+      Published Providers:
+        - com.booking.cityguide.data.SavedPlacesProvider
+          -> ContentProviderRecord{33021b2f u0 com.booking/.cityguide.data.SavedPlacesProvider}
+        - com.booking.common.logging.LoggingProvider
+          -> ContentProviderRecord{1a1f3b4b u0 com.booking/.common.logging.LoggingProvider}
+        - com.booking.messagecenter.p2g.MessageCenterContentProvider
+          -> ContentProviderRecord{2fcc8641 u0 com.booking/.messagecenter.p2g.MessageCenterContentProvider}
+        - com.booking.db.PostBookingProvider
+          -> ContentProviderRecord{15d182c5 u0 com.booking/.db.PostBookingProvider}
+        - com.booking.persistence.contentProvider.HotelTransportContentProvider
+          -> ContentProviderRecord{d1a457d u0 com.booking/.persistence.contentProvider.HotelTransportContentProvider}
+        - com.booking.persistence.contentProvider.BookingContentProvider
+          -> ContentProviderRecord{2ea44127 u0 com.booking/.persistence.contentProvider.BookingContentProvider}
+      Connected Providers:
+        - b204a74/com.android.providers.settings/.SettingsProvider->17958:com.booking/u0a159 s1/1 u0/0 +52s628ms
+      Receivers:
+        - ReceiverList{1f6785db 17958 com.booking/10159/u0 remote:3d727eea}
+        - ReceiverList{28d55f8c 17958 com.booking/10159/u0 remote:2b87dcbf}
+        - ReceiverList{3d719fb6 17958 com.booking/10159/u0 remote:266dbb51}
+
+    Process LRU list (sorted by oom_adj, 48 total, non-act at 4, non-svc at 4):
+      Proc # 3: prev  B/ /S  trm: 0 17958:com.booking/u0a159 (cch-started-ui-services)
+
+    PID mappings:
+      PID #17958: ProcessRecord{1eb61424 17958:com.booking/u0a159}
+
+    mPreviousProcess: ProcessRecord{1eb61424 17958:com.booking/u0a159}
+    mPreviousProcessVisibleTime: +3h23m13s453ms
+    mConfigWillChange: false
+
+DUMP OF SERVICE meminfo:
+  Applications Memory Usage (kB):
+  Uptime: 12244182 Realtime: 13404382
+
+  ** MEMINFO in pid 17958 [com.booking] **
+                     Pss  Private  Private  Swapped     Heap     Heap     Heap
+                   Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                  ------   ------   ------   ------   ------   ------   ------
+    Native Heap     7269     7216        0     2996        0        0        0
+    Dalvik Heap    13193    13112        0    16580        0        0        0
+   Dalvik Other     1534     1432        0       12                           
+          Stack      900      900        0        0                           
+         Cursor        4        4        0        0                           
+      Other dev        9        0        8        0                           
+       .so mmap     2126      316      304     2480                           
+      .jar mmap        4        0        4        0                           
+      .apk mmap     2427        0     1892        0                           
+      .ttf mmap      559        0      552        0                           
+      .dex mmap    12752        0    12744        0                           
+      code mmap     3602        0      968        0                           
+     image mmap     2207     1596       52      308                           
+     Other mmap      733        4      672        0                           
+             GL     9283     9283        0        0                           
+        Unknown      723      696        0       96                           
+          TOTAL    57325    34559    17196    22472        0        0        0
+
+DUMP OF SERVICE procstats:
+  AGGREGATED OVER LAST 24 HOURS:
+  System memory usage:
+    SOff/Norm: 7 samples:
+      Cached: 339MB min, 461MB avg, 697MB max
+      Free: 35MB min, 91MB avg, 184MB max
+      ZRam: 4.0KB min, 330KB avg, 1.0MB max
+      Kernel: 102MB min, 124MB avg, 222MB max
+      Native: 170MB min, 191MB avg, 208MB max
+    SOn /Norm: 19 samples:
+      Cached: 175MB min, 460MB avg, 758MB max
+      Free: 31MB min, 148MB avg, 500MB max
+      ZRam: 4.0KB min, 333KB avg, 1.1MB max
+      Kernel: 97MB min, 130MB avg, 241MB max
+      Native: 136MB min, 181MB avg, 234MB max
+
+  Per-Package Stats:
+    * com.booking / u0a159 / v1794:
+        * com.booking:bookingcomprocess / u0a159 / v1794:
+                 TOTAL: 0.13%
+               Service: 0.12%
+            Service Rs: 0.00%
+        * com.booking / u0a159 / v1794:
+                 TOTAL: 6.7% (49MB-68MB-85MB/44MB-63MB-79MB over 35)
+                   Top: 6.0% (49MB-72MB-85MB/44MB-66MB-79MB over 27)
+               Service: 0.61% (51MB-55MB-56MB/46MB-49MB-51MB over 8)
+            Service Rs: 0.00%
+            (Last Act): 0.01%
+              (Cached): 0.38% (55MB-56MB-56MB/50MB-50MB-50MB over 3)
+        * com.booking.reviews.service.PhotoUploadService:
+          Process: com.booking
+              Running count 20 / time 0.00%
+              Started count 10 / time 0.00%
+            Executing count 20 / time 0.00%
+        * com.booking.service.UpdateAppService:
+          Process: com.booking
+              Running count 18 / time 0.08%
+              Started count 9 / time 0.08%
+            Executing count 18 / time 0.00%
+        * com.booking.service.CloudSyncService:
+          Process: com.booking
+              Running count 18 / time 0.01%
+              Started count 10 / time 0.01%
+            Executing count 18 / time 0.01%
+        * com.booking.dcl.DCLService:
+          Process: com.booking:bookingcomprocess
+              Running count 29 / time 0.13%
+              Started count 29 / time 0.13%
+            Executing count 59 / time 0.00%
+        * com.booking.service.LoggingService:
+          Process: com.booking
+              Running count 27 / time 3.1%
+              Started count 19 / time 3.1%
+            Executing count 43 / time 0.01%
+        * com.booking.service.InitService:
+          Process: com.booking
+              Running count 20 / time 0.01%
+              Started count 10 / time 0.01%
+            Executing count 20 / time 0.01%
+
+  Summary:
+    * com.booking / u0a159 / v1794:
+             TOTAL: 6.7% (49MB-68MB-85MB/44MB-63MB-79MB over 35)
+               Top: 6.0% (49MB-72MB-85MB/44MB-66MB-79MB over 27)
+           Service: 0.61% (51MB-55MB-56MB/46MB-49MB-51MB over 8)
+        Service Rs: 0.00%
+        (Last Act): 0.01%
+          (Cached): 0.38% (55MB-56MB-56MB/50MB-50MB-50MB over 3)
+    * com.booking:bookingcomprocess / u0a159 / v1794:
+             TOTAL: 0.13%
+           Service: 0.12%
+        Service Rs: 0.00%
+
+  Run time Stats:
+    SOff/Norm: +10h8m51s358ms
+    SOn /Norm: +2h20m55s768ms
+         Crit: +5m10s191ms
+        TOTAL: +12h34m57s317ms
+
+  Memory usage:
+    Kernel : 125MB (182 samples)
+    Native : 189MB (182 samples)
+    Persist: 273MB (828 samples)
+    Top    : 104MB (1279 samples)
+    ImpFg  : 207MB (3600 samples)
+    ImpBg  : 41MB (1255 samples)
+    Service: 234MB (4205 samples)
+    Receivr: 154KB (2577 samples)
+    LastAct: 3.1MB (201 samples)
+    CchAct : 2.0MB (27 samples)
+    CchCAct: 170KB (41 samples)
+    CchEmty: 90MB (2053 samples)
+    Cached : 461MB (182 samples)
+    Free   : 102MB (182 samples)
+    Z-Ram   : 331KB (182 samples)
+    TOTAL  : 1.8GB
+    ServRst: 90KB (2135 samples)
+
+            Start time: 2016-04-18 15:27:02
+    Total elapsed time: +1d2h8m38s86ms (partial) libart.so
+
+  AGGREGATED OVER LAST 3 HOURS:
+  System memory usage:
+    SOff/Norm: 2 samples:
+      Cached: 513MB min, 605MB avg, 697MB max
+      Free: 51MB min, 61MB avg, 71MB max
+      ZRam: 4.0KB min, 4.0KB avg, 4.0KB max
+      Kernel: 108MB min, 165MB avg, 222MB max
+      Native: 170MB min, 185MB avg, 199MB max
+    SOn /Norm: 6 samples:
+      Cached: 519MB min, 644MB avg, 758MB max
+      Free: 31MB min, 40MB avg, 64MB max
+      ZRam: 4.0KB min, 4.0KB avg, 4.0KB max
+      Kernel: 97MB min, 164MB avg, 241MB max
+      Native: 142MB min, 194MB avg, 224MB max
+
+  Per-Package Stats:
+    * com.booking / u0a159 / v1794:
+        * com.booking:bookingcomprocess / u0a159 / v1794:
+                 TOTAL: 0.47%
+               Service: 0.46%
+            Service Rs: 0.01%
+        * com.booking / u0a159 / v1794:
+                 TOTAL: 25% (49MB-68MB-85MB/44MB-63MB-79MB over 35)
+                   Top: 22% (49MB-72MB-85MB/44MB-66MB-79MB over 27)
+               Service: 2.3% (51MB-55MB-56MB/46MB-49MB-51MB over 8)
+            Service Rs: 0.00%
+            (Last Act): 0.05%
+              (Cached): 1.4% (55MB-56MB-56MB/50MB-50MB-50MB over 3)
+        * com.booking.reviews.service.PhotoUploadService:
+          Process: com.booking
+              Running count 20 / time 0.02%
+              Started count 10 / time 0.01%
+            Executing count 20 / time 0.02%
+        * com.booking.service.UpdateAppService:
+          Process: com.booking
+              Running count 18 / time 0.31%
+              Started count 9 / time 0.31%
+            Executing count 18 / time 0.02%
+        * com.booking.service.CloudSyncService:
+          Process: com.booking
+              Running count 18 / time 0.03%
+              Started count 10 / time 0.02%
+            Executing count 18 / time 0.03%
+        * com.booking.dcl.DCLService:
+          Process: com.booking:bookingcomprocess
+              Running count 29 / time 0.47%
+              Started count 29 / time 0.47%
+            Executing count 59 / time 0.01%
+        * com.booking.service.LoggingService:
+          Process: com.booking
+              Running count 27 / time 11%
+              Started count 19 / time 11%
+            Executing count 43 / time 0.02%
+        * com.booking.service.InitService:
+          Process: com.booking
+              Running count 20 / time 0.03%
+              Started count 10 / time 0.02%
+            Executing count 20 / time 0.03%
+
+  Summary:
+    * com.booking / u0a159 / v1794:
+             TOTAL: 25% (49MB-68MB-85MB/44MB-63MB-79MB over 35)
+               Top: 22% (49MB-72MB-85MB/44MB-66MB-79MB over 27)
+           Service: 2.3% (51MB-55MB-56MB/46MB-49MB-51MB over 8)
+        Service Rs: 0.00%
+        (Last Act): 0.05%
+          (Cached): 1.4% (55MB-56MB-56MB/50MB-50MB-50MB over 3)
+    * com.booking:bookingcomprocess / u0a159 / v1794:
+             TOTAL: 0.47%
+           Service: 0.46%
+        Service Rs: 0.01%
+
+  Run time Stats:
+    SOff/Norm: +2h54m8s54ms
+    SOn /Norm: +29m17s485ms
+        TOTAL: +3h23m25s539ms
+
+  Memory usage:
+    Kernel : 164MB (62 samples)
+    Native : 192MB (62 samples)
+    Persist: 251MB (279 samples)
+    Top    : 62MB (238 samples)
+    ImpFg  : 147MB (899 samples)
+    ImpBg  : 31MB (326 samples)
+    Service: 279MB (1143 samples)
+    Receivr: 119KB (740 samples)
+    LastAct: 28KB (22 samples)
+    CchAct : 514KB (24 samples)
+    CchEmty: 77MB (533 samples)
+    Cached : 636MB (62 samples)
+    Free   : 45MB (62 samples)
+    Z-Ram   : 4.0KB (62 samples)
+    TOTAL  : 1.8GB
+    ServRst: 3.8KB (243 samples)
+
+            Start time: 2016-04-19 13:52:50
+    Total elapsed time: +3h43m14s163ms (partial) libart.so
+
+  CURRENT STATS:
+  System memory usage:
+    SOn /Norm: 2 samples:
+      Cached: 519MB min, 519MB avg, 520MB max
+      Free: 48MB min, 56MB avg, 64MB max
+      ZRam: 4.0KB min, 4.0KB avg, 4.0KB max
+      Kernel: 224MB min, 233MB avg, 241MB max
+      Native: 219MB min, 222MB avg, 224MB max
+
+  Per-Package Stats:
+    * com.booking / u0a159 / v1794:
+        * com.booking:bookingcomprocess / u0a159 / v1794:
+                 TOTAL: 3.7%
+               Service: 3.6%
+            Service Rs: 0.11%
+        * com.booking / u0a159 / v1794:
+                 TOTAL: 61% (49MB-56MB-78MB/44MB-51MB-73MB over 14)
+                   Top: 46% (49MB-57MB-78MB/44MB-53MB-73MB over 9)
+               Service: 15% (51MB-54MB-56MB/46MB-49MB-51MB over 5)
+            Service Rs: 0.00%
+              (Cached): 4.0% (55MB-55MB-55MB/50MB-50MB-50MB over 1)
+        * com.booking.reviews.service.PhotoUploadService:
+          Process: com.booking
+              Running count 16 / time 0.12%
+              Started count 8 / time 0.06%
+            Executing count 16 / time 0.12%
+        * com.booking.service.UpdateAppService:
+          Process: com.booking
+              Running count 14 / time 2.7%
+              Started count 7 / time 2.7%
+            Executing count 14 / time 0.13%
+        * com.booking.service.CloudSyncService:
+          Process: com.booking
+              Running count 15 / time 0.21%
+              Started count 8 / time 0.16%
+            Executing count 15 / time 0.20%
+        * com.booking.dcl.DCLService:
+          Process: com.booking:bookingcomprocess
+              Running count 22 / time 3.7%
+              Started count 22 / time 3.7%
+            Executing count 44 / time 0.11%
+        * com.booking.service.LoggingService:
+          Process: com.booking
+              Running count 15 / time 47%
+              Started count 13 / time 47%
+            Executing count 23 / time 0.17%
+        * com.booking.service.InitService:
+          Process: com.booking
+              Running count 16 / time 0.21%
+              Started count 8 / time 0.16%
+            Executing count 16 / time 0.20%
+
+  Summary:
+    * com.booking / u0a159 / v1794:
+             TOTAL: 61% (49MB-56MB-78MB/44MB-51MB-73MB over 14)
+               Top: 46% (49MB-57MB-78MB/44MB-53MB-73MB over 9)
+           Service: 15% (51MB-54MB-56MB/46MB-49MB-51MB over 5)
+        Service Rs: 0.00%
+          (Cached): 4.0% (55MB-55MB-55MB/50MB-50MB-50MB over 1)
+    * com.booking:bookingcomprocess / u0a159 / v1794:
+             TOTAL: 3.7%
+           Service: 3.6%
+        Service Rs: 0.11%
+
+  Run time Stats:
+    SOff/Norm: +10m18s427ms
+    SOn /Norm: +10m1s558ms (running)
+        TOTAL: +20m19s985ms
+
+  Memory usage:
+    Kernel : 233MB (16 samples)
+    Native : 222MB (16 samples)
+    Persist: 249MB (72 samples)
+    Top    : 96MB (37 samples)
+    ImpFg  : 155MB (198 samples)
+    ImpBg  : 40MB (8 samples)
+    Service: 258MB (210 samples)
+    Receivr: 13KB (41 samples)
+    LastAct: 304 (3 samples)
+    CchAct : 2.9MB (5 samples)
+    CchEmty: 55MB (66 samples)
+    Cached : 519MB (16 samples)
+    Free   : 56MB (16 samples)
+    Z-Ram   : 4.0KB (16 samples)
+    TOTAL  : 1.8GB
+    ServRst: 46 (5 samples)
+
+            Start time: 2016-04-19 17:15:32
+    Total elapsed time: +20m20s85ms (partial) libart.so
+
+DUMP OF SERVICE usagestats:
+
+DUMP OF SERVICE batterystats:
+  Discharge step durations:
+    #0: +3m19s951ms to 70 (power-save-off)
+    #1: +2m29s997ms to 71 (screen-on, power-save-off)
+    #2: +2m30s2ms to 72 (screen-on, power-save-off)
+    #3: +2m40s1ms to 73 (screen-on, power-save-off)
+    #4: +2m29s991ms to 74 (screen-on, power-save-off)
+    #5: +2m30s11ms to 75 (screen-on, power-save-off)
+    #6: +2m19s999ms to 76 (screen-on, power-save-off)
+    #7: +2m30s3ms to 77 (screen-on, power-save-off)
+    #8: +2m40s3ms to 78 (screen-on, power-save-off)
+    #9: +2m10s2ms to 79 (screen-on, power-save-off)
+    #10: +2m30s3ms to 80 (screen-on, power-save-off)
+    #11: +3m39s702ms to 81 (power-save-off)
+    #12: +2m19s999ms to 82 (screen-on, power-save-off)
+    #13: +2m10s1ms to 83 (screen-on, power-save-off)
+    #14: +2m55s297ms to 84 (power-save-off)
+    #15: +15m42s973ms to 85 (power-save-off)
+    #16: +17m9s5ms to 86 (screen-off, power-save-off)
+    #17: +35m29s965ms to 67 (screen-off, power-save-off)
+    #18: +45m24s42ms to 68 (screen-off, power-save-off)
+    #19: +1h7m23s958ms to 61 (power-save-off)
+    #20: +28m8s627ms to 62 (screen-off, power-save-off)
+    #21: +1h5m9s714ms to 63 (power-save-off)
+    #22: +44m39s655ms to 64 (screen-off, power-save-off)
+    #23: +35m16s994ms to 65 (screen-off, power-save-off)
+    #24: +29m33s997ms to 66 (screen-off, power-save-off)
+    #25: +32m18s961ms to 67 (screen-off, power-save-off)
+    #26: +47m26s199ms to 68 (screen-off, power-save-off)
+    #27: +1h37m26s860ms to 69 (power-save-off)
+    #28: +1m50s5ms to 70 (screen-on, power-save-off)
+    #29: +5m26s985ms to 71 (power-save-off)
+    #30: +32m2s995ms to 72 (screen-off, power-save-off)
+    #31: +1h53m53s15ms to 73 (power-save-off)
+    #32: +14m12s994ms to 74 (power-save-off)
+    #33: +1m40s1ms to 75 (screen-on, power-save-off)
+    #34: +1m19s997ms to 76 (screen-on, power-save-off)
+    #35: +1m20s3ms to 77 (screen-on, power-save-off)
+    #36: +1m20s0ms to 78 (screen-on, power-save-off)
+    #37: +1m20s2ms to 79 (screen-on, power-save-off)
+    #38: +60s0ms to 80 (screen-on, power-save-off)
+    #39: +1m10s0ms to 81 (screen-on, power-save-off)
+    #40: +1m10s1ms to 82 (screen-on, power-save-off)
+    #41: +60s0ms to 83 (screen-on, power-save-off)
+    #42: +1m49s999ms to 84 (power-save-off)
+    #43: +2m40s2ms to 85 (screen-on, power-save-off)
+    #44: +7m0s973ms to 86 (power-save-off)
+    #45: +2m0s1ms to 87 (screen-on, power-save-off)
+    #46: +2m10s3ms to 88 (screen-on, power-save-off)
+    #47: +2m19s999ms to 89 (screen-on, power-save-off)
+    #48: +2m10s8ms to 90 (screen-on, power-save-off)
+    #49: +2m10s0ms to 91 (screen-on, power-save-off)
+    #50: +2m20s4ms to 92 (screen-on, power-save-off)
+    #51: +2m10s4ms to 93 (screen-on, power-save-off)
+    #52: +2m10s5ms to 94 (screen-on, power-save-off)
+    #53: +2m40s1ms to 95 (screen-on, power-save-off)
+    #54: +3m10s1ms to 96 (screen-on, power-save-off)
+    #55: +1m59s985ms to 97 (screen-on, power-save-off)
+    #56: +1m40s2ms to 98 (screen-on, power-save-off)
+
+  Charge step durations:
+    #0: +3m29s999ms to 100 (power-save-off)
+    #1: +3m10s1ms to 99 (screen-off, power-save-off)
+    #2: +6m9s985ms to 98 (power-save-off)
+    #3: +5m0s1ms to 97 (power-save-off)
+    #4: +5m10s1ms to 96 (screen-off, power-save-off)
+    #5: +5m20s16ms to 95 (screen-off, power-save-off)
+    #6: +5m20s354ms to 94 (screen-off, power-save-off)
+    #7: +5m0s16ms to 93 (screen-off, power-save-off)
+    #8: +4m49s988ms to 92 (screen-off, power-save-off)
+    #9: +6m50s8ms to 91 (power-save-off)
+    #10: +5m10s11ms to 90 (screen-off, power-save-off)
+    #11: +5m10s3ms to 89 (screen-off, power-save-off)
+    #12: +4m59s986ms to 88 (screen-off, power-save-off)
+    #13: +5m0s16ms to 87 (screen-off, power-save-off)
+    #14: +4m50s1ms to 86 (screen-off, power-save-off)
+    #15: +4m59s985ms to 85 (screen-off, power-save-off)
+    #16: +4m40s0ms to 84 (screen-off, power-save-off)
+    #17: +4m40s1ms to 83 (screen-off, power-save-off)
+    #18: +4m20s1ms to 82 (screen-off, power-save-off)
+    #19: +4m30s1ms to 81 (screen-off, power-save-off)
+    #20: +4m10s1ms to 80 (screen-off, power-save-off)
+    #21: +4m10s16ms to 79 (screen-off, power-save-off)
+    #22: +3m49s985ms to 78 (screen-off, power-save-off)
+    #23: +4m0s14ms to 77 (screen-off, power-save-off)
+    #24: +3m59s986ms to 76 (screen-off, power-save-off)
+    #25: +3m20s2ms to 75 (screen-off, power-save-off)
+    #26: +3m0s0ms to 74 (screen-off, power-save-off)
+    #27: +3m0s16ms to 73 (screen-off, power-save-off)
+    #28: +3m10s4ms to 72 (screen-off, power-save-off)
+    #29: +2m59s997ms to 71 (screen-off, power-save-off)
+    Estimated charge time remaining: 0
+
+  Statistics since last charge:
+    System starts: 1, currently on battery: false
+    Time on battery: 17h 58m 32s 789ms (76.3%) realtime, 4h 25m 20s 420ms (18.8%) uptime
+    Time on battery screen off: 16h 13m 9s 262ms (68.8%) realtime, 2h 39m 56s 894ms (11.3%) uptime
+    Total run time: 23h 34m 0s 803ms realtime, 10h 0m 48s 434ms uptime
+    Charge time remaining: 0ms 
+    Start clock time: 2016-04-19-13-53-20
+    Screen on: 1h 45m 23s 527ms (9.8%) 32x, Interactive: 1h 45m 53s 874ms (9.8%)
+    Screen brightnesses:
+      dark 35s 105ms (0.6%)
+      medium 211ms (0.0%)
+      light 1h 44m 48s 211ms (99.4%)
+    Total full wakelock time: 35m 47s 638ms
+    Total partial wakelock time: 34m 46s 510ms
+    Mobile total received: 0B, sent: 0B (packets received 0, sent 0)
+    Phone signal levels:
+      none 6m 9s 324ms (0.6%) 7x
+      moderate 2s 502ms (0.0%) 1x
+      good 27m 18s 290ms (2.5%) 4x
+      great 4h 6m 56s 365ms (22.9%) 83x
+      excellent 13h 17m 56s 962ms (74.0%) 78x
+    Signal scanning time: 6m 9s 324ms
+    Radio types:
+      none 17h 58m 24s 606ms (100.0%) 1x
+    Mobile radio active time: 0ms (0.0%) 0x
+    Wi-Fi total received: 424.86MB, sent: 14.13MB (packets received 333408, sent 206433)
+    Wifi on: 17h 58m 28s 982ms (100.0%), Wifi running: 17h 58m 28s 404ms (100.0%)
+    Wifi states: (no activity)
+    Wifi supplicant states:
+      disconn 13m 51s 374ms (1.3%) 6x
+      scanning 1h 19m 23s 158ms (7.4%) 5x
+      associating 20ms (0.0%) 3x
+      associated 49ms (0.0%) 7x
+      4-way-handshake 1s 521ms (0.0%) 8x
+      group-handshake 494ms (0.0%) 10x
+      completed 16h 25m 14s 227ms (91.3%) 13x
+    Wifi signal levels:
+      level(0) 14m 29s 74ms (1.3%) 1x
+      level(1) 44m 7s 582ms (4.1%) 9x
+      level(2) 11h 58m 47s 804ms (66.6%) 56x
+      level(3) 4h 23m 18s 800ms (24.4%) 81x
+      level(4) 37m 46s 102ms (3.5%) 31x
+    Bluetooth on: 0ms (0.0%)
+    Bluetooth states: (no activity)
+
+    Device battery use since last full charge
+      Amount discharged (lower bound): 57
+      Amount discharged (upper bound): 61
+      Amount discharged while screen on: 44
+      Amount discharged while screen off: 17
+
+    Estimated power use (mAh):
+      Capacity: 3060, Computed drain: 1236, actual drain: 1744-1867
+      Screen: 718
+      Unaccounted: 509
+      Uid 0: 111
+      Wifi: 89.9
+      Cell standby: 72.9
+      Uid 1000: 57.3
+      Idle: 56.8
+      Uid u0a128: 32.9
+      Uid u0a98: 18.2
+      Uid u0a122: 13.0
+      Uid u0a140: 10.2
+      Uid u0a12: 10.2
+      Uid u0a137: 6.52
+      Uid 1001: 5.98
+      Uid u0a21: 5.28
+      Uid u0a141: 3.37
+      Phone calls: 3.02
+      Uid u0a111: 2.42
+      Uid u0a9: 2.37
+      Uid u0a22: 2.15
+      Uid u0a153: 2.13
+      Uid u0a104: 1.67
+      Uid 1013: 1.62
+      Uid u0a136: 1.20
+      Uid u0a47: 1.20
+      Uid u0a7: 0.724
+      Uid u0a118: 0.713
+      Uid u0a135: 0.700
+      Uid u0a132: 0.496
+      Uid u0a86: 0.411
+      Uid u0a5: 0.300
+      Uid u0a41: 0.281
+      Uid u0a107: 0.254
+      Uid u0a102: 0.241
+      Uid u0a99: 0.232
+      Uid u0a0: 0.171
+      Uid u0a126: 0.152
+      Uid u0a24: 0.126
+      Uid u0a11: 0.120
+      Uid u0a4: 0.111
+      Uid u0a50: 0.111
+      Uid u0a63: 0.106
+      Uid u0a29: 0.102
+      Uid 9801: 0.0836
+      Uid u0a109: 0.0739
+      Uid u0a16: 0.0483
+      Uid u0a56: 0.0392
+      Uid u0a90: 0.0381
+      Uid u0a82: 0.0375
+      Uid u0a8: 0.0372
+      Uid 2000: 0.0303
+      Uid u0a57: 0.0256
+      Uid u0a71: 0.0236
+      Uid u0a69: 0.0219
+      Uid u0a85: 0.0189
+      Uid u0a101: 0.0172
+      Uid u0a31: 0.0167
+      Uid u0a52: 0.0136
+      Bluetooth: 0.0136
+      Uid u0a95: 0.0135
+      Uid 1019: 0.0119
+      Uid u0a53: 0.0111
+      Uid u0a3: 0.00944
+      Uid u0a54: 0.00667
+      Uid u0a15: 0.00611
+      Uid u0a78: 0.00611
+      Uid u0a80: 0.00306
+      Uid 9802: 0.00279
+      Uid 1021: 0.00250
+      Uid u0a40: 0.00167
+      Uid u0a6: 0.00111
+      Uid u0a62: 0.00111
+      Uid u0a121: 0.00111
+      Uid 1014: 0.00000253
+
+    1000:
+      Wi-Fi network: 116.64KB received, 38.75KB sent (packets 262 received, 335 sent)
+      Wifi Running: 0ms (0.0%)
+      Full Wifi Lock: 6s 351ms (0.0%)
+      Wifi Scan: 3s 901ms (0.0%)
+      User activity: 382 other, 151 button, 2915 touch
+      Wake lock SCREEN_FROZEN: 66ms partial (1 times) realtime
+      Wake lock SyncLoopWakeLock: 7s 862ms partial (256 times) realtime
+      Wake lock ActivityManager-Launch realtime
+      Wake lock ConnectivityService: 1m 51s 204ms partial (2 times) realtime
+      Wake lock *job*/android/com.android.server.pm.BackgroundDexOptService realtime
+      Wake lock ShutdownThread-cpu realtime
+      Wake lock WindowManager: 23s 390ms full (10 times) realtime
+      Wake lock *job*/com.miui.whetstone/.cloud.CloudControlJobService realtime
+      Wake lock GpsLocationProvider: 222ms partial (4 times) realtime
+      Wake lock DHCP: 22s 382ms partial (2 times) realtime
+      Wake lock NetworkStats: 2s 540ms partial (39 times) realtime
+      Wake lock show keyguard: 1s 864ms partial (12 times) realtime
+      Wake lock *vibrator* realtime
+      Wake lock DHCP_WAKELOCK: 34s 34ms partial (7 times) realtime
+      Wake lock *job*/com.android.settings/.cloud.CloudJobService realtime
+      Wake lock SyncManagerHandleSyncAlarm: 5s 648ms partial (74 times) realtime
+      Wake lock ShutdownThread-screen: 2s 626ms full (1 times) realtime
+      Wake lock *alarm*: 30s 323ms partial (555 times) realtime
+      Wake lock NlpWakeLock: 4s 338ms partial (21 times) realtime
+      Wake lock WiredAccessoryManager realtime
+      Wake lock LocationManagerService: 61ms partial (8 times) realtime
+      Wake lock RingtonePlayer: 574ms partial (12 times) realtime
+      Wake lock WifiSuspend: 319ms partial (28 times) realtime
+      Wake lock ActivityManager-Sleep: 846ms partial (13 times) realtime
+      TOTAL wake: 26s 16ms full, 3m 42s 283ms partial realtime
+      Job com.miui.whetstone/.cloud.CloudControlJobService: (not used)
+      Job com.android.settings/.cloud.CloudJobService: (not used)
+      Job android/com.android.server.pm.BackgroundDexOptService: (not used)
+      Sensor 1: 2m 38s 920ms realtime (31 times)
+      Sensor 5: 1s 666ms realtime (2 times)
+      Sensor 8: 2s 808ms realtime (1 times)
+      Sensor 9: 2m 34s 152ms realtime (41 times)
+      Vibrator: 10s 178ms realtime (517 times)
+      Foreground activities: 17h 27m 36s 109ms realtime (0 times)
+      Foreground for: 17h 58m 32s 789ms 
+      Proc 6620_launcher:
+        CPU: 0ms usr + 710ms krn ; 0ms fg
+      Proc guiext-server:
+        CPU: 0ms usr + 30ms krn ; 0ms fg
+      Proc com.miui.securitycenter:remote:
+        CPU: 70ms usr + 50ms krn ; 0ms fg
+        1 proc starts
+      Proc WebViewLoader-arm64-v8a:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.networkassistant:deamon:
+        CPU: 2s 550ms usr + 2s 820ms krn ; 0ms fg
+        2 proc starts
+      Proc com.miui.securitycenter:
+        CPU: 750ms usr + 560ms krn ; 0ms fg
+        1 proc starts
+      Proc autokd:
+        CPU: 10ms usr + 530ms krn ; 0ms fg
+      Proc thermal:
+        CPU: 520ms usr + 3s 130ms krn ; 0ms fg
+      Proc WebViewLoader-armeabi-v7a:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.antispam:provider:
+        CPU: 14s 510ms usr + 4s 630ms krn ; 0ms fg
+        1 proc starts
+      Proc system:
+        CPU: 8m 45s 350ms usr + 6m 3s 500ms krn ; 0ms fg
+      Proc surfaceflinger:
+        CPU: 4m 51s 430ms usr + 7m 23s 480ms krn ; 0ms fg
+      Proc com.mediatek.batterywarning:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc aal:
+        CPU: 7s 30ms usr + 1m 14s 870ms krn ; 0ms fg
+      Proc bmi160d:
+        CPU: 4s 810ms usr + 19s 60ms krn ; 0ms fg
+      Proc com.miui.stepsprovider:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        2 proc starts
+      Proc com.android.keychain:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.klo.bugreport:
+        CPU: 120ms usr + 20ms krn ; 0ms fg
+        16 proc starts
+      Proc com.miui.bugreport:remote:
+        CPU: 20ms usr + 80ms krn ; 0ms fg
+        14 proc starts
+      Proc nvram_agent_binder:
+        CPU: 10ms usr + 0ms krn ; 0ms fg
+      Proc com.mediatek.atci.service:
+        CPU: 1s 560ms usr + 1s 500ms krn ; 0ms fg
+        3 proc starts
+      Proc com.mediatek.thermalmanager:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.cleanmaster:
+        CPU: 50ms usr + 10ms krn ; 0ms fg
+        2 proc starts
+      Proc thermald:
+        CPU: 0ms usr + 10ms krn ; 0ms fg
+      Proc com.android.settings:
+        CPU: 9s 710ms usr + 3s 990ms krn ; 9s 530ms fg
+        5 proc starts
+      Proc com.fw.upgrade.sysoper:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        30 proc starts
+      Proc com.miui.powerkeeper:service:
+        CPU: 6s 910ms usr + 7s 60ms krn ; 0ms fg
+        1 proc starts
+      Proc servicemanager:
+        CPU: 31s 670ms usr + 41s 600ms krn ; 0ms fg
+      Proc ccci_mdinit:
+        CPU: 10ms usr + 250ms krn ; 0ms fg
+      Proc com.android.systemui:
+        CPU: 2m 11s 420ms usr + 47s 370ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.whetstone:
+        CPU: 3s 10ms usr + 2s 620ms krn ; 0ms fg
+        1 proc starts
+      Proc com.miui.networkassistant:shandow:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        2 proc starts
+      Apk com.miui.powerkeeper:
+        Service com.miui.powerkeeper.PowerKeeperBackgroundService:
+          Created for: 11m 31s 972ms uptime
+          Starts: 1, launches: 1
+        Service com.miui.powerkeeper.generalcontrol.GmsRuleIntentService:
+          Created for: 6s 978ms uptime
+          Starts: 4, launches: 4
+      Apk com.miui.securitycenter:
+        Service com.miui.powercenter.provider.PowerSaveService:
+          Created for: 11m 14s 863ms uptime
+          Starts: 1, launches: 1
+        Service com.miui.securitycenter.service.SecurityCenterService:
+          Created for: 11m 16s 371ms uptime
+          Starts: 1, launches: 1
+        Service com.miui.powercenter.provider.ShutdownAlarmIntentService:
+          Created for: 84ms uptime
+          Starts: 2, launches: 2
+        Service com.miui.securitycenter.memory.MemoryCheckService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 2
+        Service com.miui.powercenter.provider.BootAlarmIntentService:
+          Created for: 58ms uptime
+          Starts: 2, launches: 2
+      Apk android:
+        179 wakeup alarms
+        Service android.hardware.location.GeofenceHardwareService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+        Service com.android.internal.backup.LocalTransportService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+      Apk com.miui.bugreport:
+        Service com.xiaomi.reporter.ReporterService:
+          Created for: 2s 251ms uptime
+          Starts: 1, launches: 1
+      Apk com.android.keychain:
+        Service com.android.keychain.KeyChainService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+      Apk com.android.keyguard:
+        Service com.android.keyguard.KeyguardService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+        Service miui.maml.elements.MusicListenerService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 4
+      Apk com.miui.klo.bugreport:
+        Service com.miui.klo.bugreport.service.FeedbackBackgroundService:
+          Created for: 1s 508ms uptime
+          Starts: 2, launches: 2
+        Service com.miui.klo.bugreport.service.QueryServerService:
+          Created for: 8s 26ms uptime
+          Starts: 1, launches: 1
+      Apk com.google.android.gms:
+        2 wakeup alarms
+      Apk com.mediatek.atci.service:
+        Service com.mediatek.atci.service.AtciService:
+          Created for: 11m 13s 676ms uptime
+          Starts: 1, launches: 1
+      Apk com.miui.cleanmaster:
+        Service com.miui.optimizecenter.CheckGarbageCleanupService:
+          Created for: 7s 173ms uptime
+          Starts: 1, launches: 1
+        Service com.miui.optimizecenter.AutoUpdateCLeanupDBService:
+          Created for: 14s 597ms uptime
+          Starts: 2, launches: 2
+      Apk com.android.settings:
+        Service com.android.settings.wifi.MiuiWifiService:
+          Created for: 11m 29s 774ms uptime
+          Starts: 1, launches: 1
+        Service com.android.settings.analytics.ObserverService:
+          Created for: 11m 14s 15ms uptime
+          Starts: 1, launches: 1
+        Service com.android.settings.analytics.AnalyticService:
+          Created for: 274ms uptime
+          Starts: 13, launches: 13
+        Service com.android.settings.cloud.CloudSettingsService:
+          Created for: 11s 3ms uptime
+          Starts: 4, launches: 4
+        Service com.android.settings.display.ScreenPaperModeUpdateService:
+          Created for: 5s 849ms uptime
+          Starts: 5, launches: 5
+      Apk com.fw.upgrade.sysoper:
+        3 wakeup alarms
+        Service com.app.myfolder.FolderService:
+          Created for: 12s 236ms uptime
+          Starts: 4, launches: 4
+        Service com.msg.analytics.AnalyticsService:
+          Created for: 56s 890ms uptime
+          Starts: 16, launches: 18
+      Apk com.miui.networkassistant:
+        Service com.miui.networkassistant.service.FirewallService:
+          Created for: 11m 35s 210ms uptime
+          Starts: 1, launches: 1
+        Service com.miui.networkassistant.service.ResourceHelperService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 2
+        Service com.miui.networkassistant.service.tm.TrafficManageService:
+          Created for: 11m 35s 209ms uptime
+          Starts: 1, launches: 1
+      Apk com.miui.antispam:
+        Service com.miui.antispam.service.AntiSpamService:
+          Created for: 168ms uptime
+          Starts: 5, launches: 5
+      Apk com.android.systemui:
+        Service miui.maml.elements.MusicListenerService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+        Service com.android.systemui.ImageWallpaper:
+          Created for: 0ms uptime
+          Starts: 0, launches: 1
+        Service com.android.systemui.SystemUIService:
+          Created for: 11m 36s 289ms uptime
+          Starts: 1, launches: 1
+      Apk com.miui.whetstone:
+        Service com.miui.whetstone.net.MiuiDnsService:
+          Created for: 11m 31s 976ms uptime
+          Starts: 1, launches: 1
+    u0a159:
+      Foreground for: 17h 27m 36s 109ms 
+      Apk com.booking:
+        Service com.booking.service.LoggingService:
+          Created for: 0ms uptime
+          Starts: 1, launches: 1
+        Service com.booking.dcl.DCLService:
+          Created for: 0ms uptime
+          Starts: 1, launches: 0
+
