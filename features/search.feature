@@ -10,3 +10,4 @@ Scenario: search Close to Cochabamba
    Then I should see "Apartment Juan Daniel II" in the result list
 
 
+#working on scenario
