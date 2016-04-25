@@ -9,3 +9,5 @@ Scenario: search Close to Cochabamba
     And I click on Vamos alla
    Then I should see "Apartment Juan Daniel II" in the result list
 
+
+  
