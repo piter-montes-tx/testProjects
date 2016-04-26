@@ -1,0 +1,1 @@
+Feature: booking.com App Recent Viewed Menu
