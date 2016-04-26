@@ -12,54 +12,54 @@ Feature: Change Language
     Given I Open Booking.com search screen
     When I tap on "Quick Menu" option
     And I tap on "Language" option from the "Quick Menu" List
-    Then I should see <language> item option is displayed on the "Language" list
+    Then I should see "<language>" item option is displayed on the "Language" list
     Examples:
       |language|
       |English |
-      |Espanol |
-      |Francais|
+      |Español |
+      |Français|
 
-  Scenario: Verify after choosing Language option the changes were applied from Quick Menu list
+  Scenario Outline: Verify after choosing Language option the changes were applied from Quick Menu list
     Given I Open Booking.com search screen
     And I tap on "Quick Menu" option
     And I tap on "Language" option from the "Quick Menu" List
-    When I tap on <language> item option from the "Language" list
+    When I tap on "<language>" item option from the "Language" list
     And I tap on "Quick Menu" option
-    Then I should see the application language changed to <idiom> language title
-  Examples:
-  |language| idiom    |
-  |English | Language |
-  |Español | Idioma   |
-  |Français| Langue   |
-
-  #Going Main Menu option
-  Scenario: Verify that Language option is displayed on Main Menu list from Main Menu list
-    Given I Open Booking.com search screen
-    And I tap on "Main Menu" option
-    When I select "Settings" from "Main Menu" menu
-    Then I should see "Language" item option is displayed on "Settings" screen
-
-  Scenario Outline: Verify that Language option is displayed in Language List from Main Menu list
-    Given I Open Booking.com search screen
-    And I tap on "Main Menu" option
-    And I select "Settings" from "Main Menu" menu
-    When I tap on "Language" option from the "Settings" screen
-    Then I should see <language> item option is displayed on the "Language" list
+    Then I should see the application language changed to "<idiom>" language title
     Examples:
-      |language|
-      |English |
-      |Espanol |
-      |Francais|
+      |language| idiom    |
+      |English | Language |
+      |Español | Idioma   |
+      |Français| Langue   |
 
-  Scenario: Verify after choosing Language option the changes were applied from Main Menu list
-    Given I Open Booking.com search screen
-    And I tap on "Main Menu" option
-    And I select "Settings" from "Main Menu" menu
-    When I tap on "Language" option from the "Settings" screen
-    When I tap on <language> item option from the "Language" list
-    Then I should see the application language changed to <idiom> language title
-  Examples:
-  |language| idiom    |
-  |English | Language |
-  |Español | Idioma   |
-  |Français| Langue   |
+#  #Going Main Menu option
+#  Scenario: Verify that Language option is displayed on Main Menu list from Main Menu list
+#    Given I Open Booking.com search screen
+#    And I tap on "Main Menu" option
+#    When I select "Settings" from "Main Menu" menu
+#    Then I should see "Language" item option is displayed on "Settings" screen
+#
+#  Scenario Outline: Verify that Language option is displayed in Language List from Main Menu list
+#    Given I Open Booking.com search screen
+#    And I tap on "Main Menu" option
+#    And I select "Settings" from "Main Menu" menu
+#    When I tap on "Language" option from the "Settings" screen
+#    Then I should see "<language>" item option is displayed on the "Language" list
+#    Examples:
+#      |language|
+#      |English |
+#      |Espanol |
+#      |Francais|
+#
+#  Scenario Outline: Verify after choosing Language option the changes were applied from Main Menu list
+#    Given I Open Booking.com search screen
+#    And I tap on "Main Menu" option
+#    And I select "Settings" from "Main Menu" menu
+#    When I tap on "Language" option from the "Settings" screen
+#    When I tap on "<language>" item option from the "Language" list
+#    Then I should see the application language changed to "<idiom>" language title
+#  Examples:
+#  |language| idiom    |
+#  |English | Language |
+#  |Español | Idioma   |
+#  |Français| Langue   |
