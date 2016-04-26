@@ -24,3 +24,4 @@ Feature: booking.com App Recent Searches Menu.
     And I should see "Litle Havana" hotel with the last date modified "13 nights  \(May 11 - May 24, 2016\)"
     And I should see "Litle Havana" hotel with the last guests modified "2"
 
+    
