@@ -26,6 +26,8 @@ Feature: Change Language
     When I tap on "<language>" item option from the "Language" list
     And I tap on "Quick Menu" option
     Then I should see the application language changed to "<idiom>" language title
+    And  I tap on "Language" option from the "Quick Menu" list
+    And I tap on "English" item option from the "Language" list
     Examples:
       |language| idiom    |
       |English | Language |
