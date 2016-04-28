@@ -16,8 +16,9 @@ When(/^I fill in email Address field with "(.*)"$/) do |arg|
   id('user_email').type "#{arg}"
 end
 
-And(/^I finn in Password field with "([^"]*)"$/) do |arg|
-  id('user_password').type "#{arg}"
+And(/^I fill in Password field with "(.*)"$/) do |arg|
+  puts "Password: #{arg}"
+  id('user_password').send_keys "#{arg}"
 end
 
 And(/^I click "([^"]*)" button$/) do |arg|
@@ -32,4 +33,48 @@ end
 
 And(/^I should be able to press "(.*)" button$/) do |arg|
   button("#{arg}").click
+end
+
+When(/^I Click Sign in button$/) do
+  id('sign_in_button').click
+end
+
+Then(/^I should be logged to the Search Activity$/) do
+  txt = id('search_title').text
+  expect(txt).to eq("Search")
+end
+
+And(/^I should see "(.*)" email account$/) do |arg|
+  step "I click on the hamburguer button"
+  txt = id('navigation_drawer_header_user_name').text
+
+  expect(txt).to eq("#{arg}")
+end
+
+Then(/^I should see error message popup$/) do
+  exists{id('title')}?(expect(id('title').text).to eq('Oops! Sign in failed')):(raise 'expected message popup not found.')
+end
+
+And(/^I should click "([^"]*)" button$/) do |arg|
+  button('OK').click
+end
+
+Given(/^I am Signed in$/) do
+  steps %{
+    Given I tap on the "Sign in or create account" option
+    When I fill in email Address field with "redridehell+1@gmail.com"
+    And I fill in Password field with "zaq@\#$123"
+    When I Click Sign in button
+    Given I click on the hamburguer button
+  }
+end
+
+When(/^I tap on "([^"]*)"$/) do |arg|
+  scroll_to("sign out")
+  step "Given I tap on the \"Sign out\" option"
+end
+
+Then(/^I should see "([^"]*)"$/) do |arg|
+  txt = id('navigation_drawer_list_item_label').text
+  expect(txt).to eq(arg)
 end
