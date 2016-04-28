@@ -1,7 +1,7 @@
 Feature: booking.com App first feature
 
   the next scenarios correspond to the main page or activity of the booking.com application
-
+@wip
 Scenario: search Close to Cochabamba
   Given I Open Booking.com search screen
    When I tap on the "current locations" input field
@@ -10,3 +10,4 @@ Scenario: search Close to Cochabamba
    Then I should see "Apartment Juan Daniel II" in the result list
 
 
+  
