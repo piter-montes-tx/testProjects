@@ -58,3 +58,23 @@ end
 And(/^I should click "([^"]*)" button$/) do |arg|
   button('OK').click
 end
+
+Given(/^I am Signed in$/) do
+  steps %{
+    Given I tap on the "Sign in or create account" option
+    When I fill in email Address field with "redridehell+1@gmail.com"
+    And I fill in Password field with "zaq@\#$123"
+    When I Click Sign in button
+    Given I click on the hamburguer button
+  }
+end
+
+When(/^I tap on "([^"]*)"$/) do |arg|
+  scroll_to("sign out")
+  step "Given I tap on the \"Sign out\" option"
+end
+
+Then(/^I should see "([^"]*)"$/) do |arg|
+  txt = id('navigation_drawer_list_item_label').text
+  expect(txt).to eq(arg)
+end

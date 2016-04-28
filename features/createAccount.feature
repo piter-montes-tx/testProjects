@@ -27,3 +27,9 @@ Feature: sign in or Create account feature, describes account creation process a
      When I Click Sign in button
      Then I should see error message popup
       And I should click "OK" button
+
+  Scenario: Sign Out
+    Given I am Signed in
+      And I tap on the "redridehell+1@gmail.com" option
+     When I tap on "Sign out"
+     Then I should see "Sign in or create account"
