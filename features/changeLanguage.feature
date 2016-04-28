@@ -60,8 +60,8 @@ Feature: Change Language
     When I tap on "Language" option from the "Settings" screen
     When I tap on "<language>" item option from the "Language" list
     Then I should see the application language changed to "<idiom>" language title
-  Examples:
-  |language| idiom    |
-  |English | Language |
+    Examples:
+      |language| idiom    |
+      |English | Language |
 #  |Español | Idioma   |
 #  |Français| Langue   |

@@ -5,7 +5,7 @@ When(/^I tap on "([^"]*)" option$/) do |option|
       # xpath("//android.widget.ImageView[@content-desc=\"More options\"]").click
       xpath("//android.widget.FrameLayout[@index='0']/child::android.widget.LinearLayout/child::android.widget.FrameLayout/child::android.view.View/child::android.widget.FrameLayout/child::android.view.View/child::android.support.v7.widget.LinearLayoutCompat/child::android.widget.ImageView").click
       sleep 1
-      # find(option).click
+    # find(option).click
     else
       puts("No option defined for #{option}")
   end
