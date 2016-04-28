@@ -1,6 +1,5 @@
 Given(/^I click on the hamburguer button$/) do
-  sleep 2.seconds
-  xpath("//android.widget.ImageButton[@index='0']").click
+  wait{ xpath("//android.widget.ImageButton[@index='0']").click}
 end
 
 And(/^I tap on the "([^"]*)" option$/) do |arg|
