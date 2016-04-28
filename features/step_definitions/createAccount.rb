@@ -35,16 +35,11 @@ And(/^I should be able to press "(.*)" button$/) do |arg|
   button("#{arg}").click
 end
 
-#And(/^I fill in Password field with "(.*)"$/) do |arg|
-#  step "I fill in Password field with #{arg}"
-#end
-
 When(/^I Click Sign in button$/) do
   id('sign_in_button').click
 end
 
 Then(/^I should be logged to the Search Activity$/) do
-  #wait{text('Search')}
   txt = id('search_title').text
   expect(txt).to eq("Search")
 end
