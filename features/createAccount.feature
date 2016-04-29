@@ -33,3 +33,16 @@ Feature: sign in or Create account feature, describes account creation process a
       And I tap on the "redridehell+1@gmail.com" option
      When I tap on "Sign out"
      Then I should see "Sign in or create account"
+
+  Scenario Outline: Fill in All about you info
+    Given I am Signed in
+      And I tap on the "redridehell+1@gmail.com" option
+     When I fill in firstname with "firstName"
+      And I fill in lastname with "lastName"
+      And I tap on the back arrow
+     Then I should see "Save Changes?" dialog
+      And I should be able to tap <option> button
+    Examples:
+    |option|
+    |DELETE CHANGES|
+    |SAVE  |
