@@ -76,3 +76,9 @@ Feature: sign in or Create account feature, describes account creation process a
       And I tap on the "redridehell+1@gmail.com" option
      When I tap on the "Connect with Facebook" button
      Then I should see a "DISCONNECT" button
+
+  Scenario: disconnect from using facebook
+      Given I am Signed in with facebook
+       When I tap on the "DISCONNECT" button
+       Then I should see a "Facebook" titled Alert message
+        And I should tap the "Doscpnnect from Facebook" button
