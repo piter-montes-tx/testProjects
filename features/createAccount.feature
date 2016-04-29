@@ -48,7 +48,7 @@ Feature: sign in or Create account feature, describes account creation process a
     |SAVE  |
 
   Scenario: Forgot your password without filling email address
-    Given I am Signed in
+    Given I tap on the "Sign in or create account" option
       And I tap on the "redridehell+1@gmail.com" option
       And I tap on "forgot your password?" url link
      When I tap on the "reset Password" button
