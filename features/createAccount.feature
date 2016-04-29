@@ -57,11 +57,11 @@ Feature: sign in or Create account feature, describes account creation process a
 
   Scenario: Forgot your password with invalid email
     Given I tap on the "Sign in or create account" option
-    And I am in the "Reset password" view
-    When When I fill in email field with "invalid@email.com" email
-    And I tap on the "reset Password" button
-    Then I Should see "Unable to reset password" error popup
-    And should be able to tap on "OK" button
+      And I am in the "Reset password" view
+     When When I fill in email field with "invalid@email.com" email
+      And I tap on the "reset Password" button
+     Then I Should see "Unable to reset password" error popup
+      And I should be able to tap on "OK" button
 
   Scenario: Sign in using facebook with incorrect booking passwd
     Given I tap on the "Sign in or create account" option
@@ -70,3 +70,9 @@ Feature: sign in or Create account feature, describes account creation process a
       And I tap on "connect" button
      Then I should see "Oops! Sign in failed" error popup
       And I should tap on "OK" button
+
+  Scenario: Sign in using facebook
+    Given I am Signed in
+      And I tap on the "redridehell+1@gmail.com" option
+     When I tap on the "Connect with Facebook" button
+     Then I should see a "DISCONNECT" button
