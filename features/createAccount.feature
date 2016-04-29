@@ -62,3 +62,11 @@ Feature: sign in or Create account feature, describes account creation process a
     And I tap on the "reset Password" button
     Then I Should see "Unable to reset password" error popup
     And should be able to tap on "OK" button
+
+  Scenario: Sign in using facebook with incorrect booking passwd
+    Given I tap on the "Sign in or create account" option
+     When I tap on "Sign in with Facebook" button
+      And I fill in password field with "noCorrectPasswd"
+      And I tap on "connect" button
+     Then I should see "Oops! Sign in failed" error popup
+      And I should tap on "OK" button
