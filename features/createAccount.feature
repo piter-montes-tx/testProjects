@@ -54,3 +54,11 @@ Feature: sign in or Create account feature, describes account creation process a
      When I tap on the "reset Password" button
      Then I sould see "Please fill in a valid email address" error message
       And I should remain in the "Reset password" view
+
+  Scenario: Forgot your password with invalid email
+    Given I tap on the "Sign in or create account" option
+    And I am in the "Reset password" view
+    When When I fill in email field with "invalid@email.com" email
+    And I tap on the "reset Password" button
+    Then I Should see "Unable to reset password" error popup
+    And should be able to tap on "OK" button
