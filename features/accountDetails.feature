@@ -66,3 +66,12 @@ Feature this review the account details of a account created and signed in
     Examples:
       |firstName  | lastName  |
       |Piter      | Test      |
+
+  Scenario Outline: Verify email is filled in Personal details info into account details page
+    Given I go to Account details page
+    And I scroll until "Personal details" section
+    Then I should see email address with "<email>"
+    And I  should verify that emal with "<email>" cannot be edited
+    Examples:
+      |email  |
+      |piter@gmail.com  |
