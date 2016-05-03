@@ -39,3 +39,16 @@ Feature this review the account details of a account created and signed in
     And I scroll until "Payment details" section
     Then I should see "Add a card" link on Payment details section
 
+   #All About you fields
+  Scenario Outline: Without fill in All about you info into account details
+    Given I go to Account details page
+    When I clean in firstname
+    And I clean in lastname
+    And I tap on the back arrow
+    And I tap on "SAVE" button from "Save Changes?" dialog
+    And I go to Account details page
+    Then I should see firstname with "<firstName>"
+    And I  should see lastname with "<lastName>"
+    Examples:
+      |firstName  | lastName  |
+      |Piter      | Test      |
