@@ -75,3 +75,15 @@ Feature this review the account details of a account created and signed in
     Examples:
       |email  |
       |piter@gmail.com  |
+
+  Scenario Outline: introduce mobile phone number (number keyboard is enabled)
+    Given I go to Account details page
+    And I scroll until "Personal details" section
+    And I tap  on mobile Phone field and fill "<phoneNumber>"
+    And I tap on the back arrow
+    And I save the Changes on Account details
+    And I scroll until "Personal details" section
+    Then I should see  on mobile Phone field with "<phoneNumber>" value filled
+    Examples:
+      | phoneNumber   |
+      | 59170712345   |
