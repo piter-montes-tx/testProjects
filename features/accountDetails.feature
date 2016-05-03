@@ -15,3 +15,11 @@ Feature this review the account details of a account created and signed in
     Given I go to Account details page
     Then I should see "First Name" field on all about section
     And I should see "Last Name" field on all about section
+
+  Scenario: Verify that Personal Details fields are displayed on Account details page
+    Given I go to Account details page
+    And I scroll until "Personal details" section
+    Then I should see "Email Address" field on Personal details section
+    And I should see "Mobile phone" field on Personal details section
+    And I should see "Date of birth" field on Personal details section
+    And I should see "Gender" field on Personal details section
