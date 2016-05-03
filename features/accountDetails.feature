@@ -33,3 +33,9 @@ Feature this review the account details of a account created and signed in
     And I should see "City" field on Other details section
     And I should see "Business traveller" field on Other details section
     And I should see "Smoking preferred" field on Other details section
+
+  Scenario: Verify that Payment Details fields are displayed on Account details page
+    Given I go to Account details page
+    And I scroll until "Payment details" section
+    Then I should see "Add a card" link on Payment details section
+
