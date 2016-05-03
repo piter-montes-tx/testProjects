@@ -57,10 +57,10 @@ Feature this review the account details of a account created and signed in
     Given I go to Account details page
     When I fill in firstname with "<firstName>"
     And I fill in lastname with "<lastName>"
-    And I tap on the back arrow
-    And I should see "Save Changes?" dialog
-    And I tap on "SAVE" button from "Save Changes?" dialog
-    And I go to Account details page
+    # And I tap on the back arrow
+    # And I tap on "SAVE" button from "Save Changes?" dialog
+    # And I go to Account details page
+    And I save the Changes on Account details
     Then I should see firstname with "<firstName>"
     And I  should see lastname with "<lastName>"
     Examples:
