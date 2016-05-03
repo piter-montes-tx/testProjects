@@ -23,3 +23,13 @@ Feature this review the account details of a account created and signed in
     And I should see "Mobile phone" field on Personal details section
     And I should see "Date of birth" field on Personal details section
     And I should see "Gender" field on Personal details section
+
+  Scenario: Verify that Other Details fields are displayed on Account details page
+    Given I go to Account details page
+    And I scroll until "Other details" section
+    Then I should see "Country" field on Other details section
+    And I should see "Address" field on Other details section
+    And I should see "Post Code" field on Other details section
+    And I should see "City" field on Other details section
+    And I should see "Business traveller" field on Other details section
+    And I should see "Smoking preferred" field on Other details section
