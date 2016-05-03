@@ -87,3 +87,8 @@ Feature this review the account details of a account created and signed in
     Examples:
       | phoneNumber   |
       | 59170712345   |
+
+  Scenario: introduce date of birth fields (date picker will open)
+    Given I go to Account details page
+    And I scroll until "Personal details" section
+  #work with datepicker here
